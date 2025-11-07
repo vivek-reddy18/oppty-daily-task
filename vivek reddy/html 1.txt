@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YANDODU</title>
+    <style>
+        /* Center all content */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* Style the main header */
+        h1 {
+            color: darkblue;
+        }
+
+        /* Subheadings */
+        h2 {
+            color: darkred;
+        }
+
+        /* Style horizontal lines */
+        hr {
+            width: 60%;
+            border: 1px solid gray;
+        }
+
+        /* Style links */
+        a {
+            color: green;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer text */
+        footer {
+            color: #555;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top of the page -->
+    <h1 id="top">This is <strong>VIVEK</strong> <em>REDDY</em></h1>
+    <p><u>Welcome to my first HTML webpage!</u></p>
+    <p>Vivek is 1<sup>st</sup> ranker and H<sub>2</sub>O is the formula for water.</p>
+
+    <hr>
+
+    <!-- Navigation links (internal anchors) -->
+    <h2>Jump to Sections</h2>
+    <a href="#about">About Me</a> |
+    <a href="#education">Education</a> |
+    <a href="#contact">Contact</a>
+
+    <hr>
+
+    <!-- About Section -->
+    <h2 id="about">About Me</h2>
+    <p>Hello! I am <strong>Yandodu Vivek Reddy</strong>.  
+       I am passionate about <em>Web Development</em> and learning new technologies every day.</p>
+    <a href="#top">Back to Top</a>
+
+    <hr>
+
+    <!-- Education Section -->
+    <h2 id="education">Education</h2>
+    <p>I have completed my graduation with <strong>excellent academic performance</strong>.  
+       I love subjects related to <u>Computer Science</u> and enjoy solving coding problems.</p>
+    <a href="#top">Back to Top</a>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <h2 id="contact">Contact</h2>
+    <p>You can reach me on my <a href="http://linkedin.com/in/y-vivek-reddy-66492a324" target="_blank">LinkedIn profile</a>.</p>
+    <p>Or send an email to: <a href="mailto:vivekreddyyandodu@gmail.com">vivekreddyyandodu@gmail.com</a></p>
+    <a href="#top">Back to Top</a>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Yandodu Vivek Reddy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
