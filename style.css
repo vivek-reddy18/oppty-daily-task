@@ -1,0 +1,124 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background-color: #f5f5f5;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 90vh;
+      margin: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background-color: #0b47a0;
+    }
+    .logo {
+      color: white;
+      font-weight: 500;
+      font-size: 20px;
+      
+    }
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+    .nav-links a {
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .nav-buttons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .login {
+      color: #b3d4fc;
+      text-decoration: none;
+    }
+    .join-button {
+      background-color: #2196f3;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .intro {
+      position: relative;
+      background-color: #0b47a0;
+      color: white;
+      text-align: center;
+      padding: 120px 20px 200px;
+      overflow: hidden;
+    }
+    .intro::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -5%;
+      width: 110%;
+      height: 150px;
+      background-color: #fff;
+      transform: rotate(-2deg);
+      transform-origin: center;
+      z-index: 1;
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .welcome {
+      color: #68b5ff;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    .intro h1 {
+      font-size: 42px;
+      line-height: 1.3;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .sub {
+      font-size: 15px;
+      color: #d0e4ff;
+      margin-bottom: 40px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    .first-button {
+      background-color: #2196f3;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .second-button {
+      background-color: transparent;
+      color: #cce2ff;
+      padding: 10px 25px;
+      border: 1px solid #cce2ff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+    }
