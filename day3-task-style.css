@@ -23,7 +23,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 8%;
-      background-color: #0b47a0;
+      background-color:#75cf0f;;
     }
     .logo {
       color: white;
@@ -60,7 +60,7 @@
     
     .intro {
       position: relative;
-      background-color: #0b47a0;
+      background-color: #75cf0f;
       color: white;
       text-align: center;
       padding: 120px 20px 200px;
@@ -122,3 +122,4 @@
       text-decoration: none;
       font-weight: 500;
     }
+
