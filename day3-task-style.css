@@ -9,7 +9,7 @@
       overflow-x: hidden;
       display: flex;
       flex-direction: column;
-      min-height: 90vh;
+      height: 620px;
       margin: 0;
     }
     .container {
@@ -23,7 +23,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 8%;
-      background-color:#75cf0f;;
+      background-color: #0b47a0;
     }
     .logo {
       color: white;
@@ -49,6 +49,9 @@
       color: #b3d4fc;
       text-decoration: none;
     }
+    .login:hover{
+      background-color: red;
+    }
     .join-button {
       background-color: #2196f3;
       color: white;
@@ -57,10 +60,13 @@
       text-decoration: none;
       font-weight: 600;
     }
+    .join-button:hover{
+      background-color: red;
+    }
     
     .intro {
       position: relative;
-      background-color: #75cf0f;
+      background-color: #0b47a0;
       color: white;
       text-align: center;
       padding: 120px 20px 200px;
@@ -70,14 +76,17 @@
       content: "";
       position: absolute;
       bottom: 0;
-      left: -5%;
-      width: 110%;
+      left: -2%;
+      width: 150%;
       height: 150px;
       background-color: #fff;
-      transform: rotate(0deg);
+      transform: rotate(-2deg);
       transform-origin: center;
       z-index: 1;
     }
+     
+
+
     .content {
       position: relative;
       z-index: 2;
@@ -106,12 +115,15 @@
       gap: 15px;
     }
     .first-button {
-      background-color: #2196f3;
+      background-color: #f34121;
       color: white;
       padding: 10px 25px;
       border-radius: 4px;
       text-decoration: none;
       font-weight: 600;
+    }
+    .first-button:hover{
+      background-color: red;
     }
     .second-button {
       background-color: transparent;
@@ -122,5 +134,7 @@
       text-decoration: none;
       font-weight: 500;
     }
-
+    .second-button:hover{
+      background-color: red;
+    }  
 
