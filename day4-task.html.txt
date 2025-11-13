@@ -4,8 +4,12 @@
     <title>CSS BASICS</title>
     <style>
       .head{
-        color:brown;
-        text-align: center;
+         color: brown;
+         background-color: peru;
+         margin-left: 600px;
+         display: inline-block;
+         margin-top: 10px;
+         
       }
          h1 {
             color:brown;
@@ -115,7 +119,7 @@
       </div>
       <div class="container">
         <h2 class="background">CSS BACKGROUND</h2>
-        <p class="background-color">background makes the picture beautiful</p><br>
+        <p class="background-color">background makes the picture beautiful</p><br><br>
         <p class="background-image">Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.<br> Maxime delectus labore necessitatibus <br>dolores earum nesciunt, eaque <br>voluptates culpa vel assumenda,<br> non porro odit sequi quidem <br>laborum nostrum! Ab,<br> reprehenderit placeat?</p>
         </div>
         <div class="container">
@@ -126,3 +130,4 @@
         </div>
 </body>
 </html>
+
