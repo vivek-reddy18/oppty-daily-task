@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: gray;
+        }
+        .container{
+            background-image: linear-gradient( #a18cd1 0%, #fbc2eb 100%);
+            width:1400px;
+            height: 120px;
+            text-align: center;
+            gap:20px;
+        }
+        .container0{
+             background-color: white;
+             width:1340px;
+             height:120px;
+             text-align: center;
+             gap:20px;
+             border-radius: 10px;
+             margin-left: 20px;
+        }
+        .intro-btn,
+        .ele-btn,
+        .att-btn,
+        .hp-btn,
+        .text-btn,
+        .link-btn{
+              padding: 10px 20px;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 0 10px;                 
+            display: inline-block;
+            background-color: aqua;
+            margin-top: 40px;
+        }
+        .backtohome{
+            color:black;
+            border-radius: 10px;
+            background-color:orange;
+            margin-left: 1250px;
+            
+        }
+        .backtohome:hover{
+            background-color:red;
+        }
+        h1{
+            color:black;
+            font-size: 1.5;
+            margin-bottom: 20px;
+        }
+        
+         .html-btn,
+        .css-btn {
+            padding: 10px 20px;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            margin: 0 10px;                 
+            display: inline-block;
+            background-color: aqua;
+        }
+        .container1{
+            color:black;
+            width:1340px;
+            height:400px;
+            margin: 10px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+            
+        }
+        h2{
+            color:black;
+            margin-left: 10px;
+        }
+        h3{
+            color:darkblue;
+            margin-left: 10px;
+        }
+        p{
+            font-size: 1.5;
+            margin-left: 10px;
+        }
+        .container2{
+            color:black;
+            width:1340px;
+            height:400px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+         .container3{
+            color:black;
+            width:1340px;
+            height:400px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+         .container4{
+            color:black;
+            width:1340px;
+            height:400px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+         .container5{
+            color:black;
+            width:1340px;
+            height:400px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .container6{
+            color:black;
+            width:1340px;
+            height:400px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .container01{
+             background-color: white;
+             width:1340px;
+             height:120px;
+             text-align: center;
+             gap:20px;
+             border-radius: 10px;
+             margin-left: 20px;
+        }
+        .intro-btn,
+        .syn-btn,
+        .color-btn,
+        .bg-btn,
+        .border-btn,
+        .margin-btn{
+               padding: 10px 20px;
+               color: black;
+               text-decoration: none;
+               border-radius: 10px;
+               font-weight: bold;
+               margin: 0 10px;                 
+               display: inline-block;
+               background-color: aqua;
+               margin-top: 40px;
+        }
+
+         .container7{
+            color:black;
+            width:1340px;
+            height:420px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+         }
+         .container8{
+            color:black;
+            width:1340px;
+            height:400px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+         }
+         .container9{
+            color:black;
+            width:1340px;
+            height:420px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+         }
+         .container9{
+            color:black;
+            width:1340px;
+            height:420px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+         }
+         .container10{
+            color:black;
+            width:1340px;
+            height:400px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+         }
+         .container11{
+            color:black;
+            width:1340px;
+            height:400px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+         }
+          .container12{
+            color:black;
+            width:1340px;
+            height:400px;
+            margin: 20px;
+            margin-left: 30px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+         }
+        
+
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container" >
+        
+      <h1><strong>Web Development</strong></h1>
+      <a href="#html" class="html-btn"><strong>Html</strong></a>
+      <a href="#css" class="css-btn"><strong>Css</strong></a>
+    </div>
+    <div class="container0">
+        <a href="#introduction" class="intro-btn"><strong>Introduction to HTML</strong></a>
+        <a href="#elements" class="ele-btn"><strong>Elements</strong></a>
+        <a href="#attributes" class="att-btn"><strong>Attributes</strong></a>
+        <a href="#heading" class="hp-btn"><strong>Heading</strong></a>
+        <a href="#text" class="text-btn"><strong>Text Formatting</strong></a>
+        <a href="#links" class="link-btn"><strong>links and anchors</strong></a>
+    </div>
+   
+    
+    <div class="container1" id=html>
+         <h2 id="introduction">Introduction to HTML:</h2>
+        <h3>What is HTML?</h3>
+        <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.<br> It describes the structure of a web page using markup.</p>
+        <p>HTML consists of a series of elements that tell the browser how to display the content. These elements form the<br> building blocks of web pages.</p>
+        <h3>Explanation of Elements</h3>
+        <ul>
+            <li><strong>!DOCTYPE html</strong> - Defines this document as HTML5</li>
+            <li><strong>html</strong>- The root element of the HTML page</li>
+            <li><strong>head</strong>- Contains meta information about the document</li>
+            <li><strong>title</strong>-  Sets the title of the document (shown in the browser tab)</li>
+            <li><strong>body</strong>- Contains the visible page content</li>
+        </ul>
+    </div>
+     <button class="backtohome"><a href="#top">back to home</a></button>
+    <div class="container2">
+        <h2 id="elements">Elements:</h2>
+        <h3>What are HTML Elements?</h3>
+        <p>An HTML element is everything from the start tag to the end tag</p>
+        <ul>
+            <li><strong>p</strong>- This is a paragraph.</li>
+            <li><strong>h1</strong>- This is a heading.</li>
+            <li><strong>br</strong>-  is an empty element </li>
+        </ul>
+        <h3>HTML Tags</h3>
+        <p>HTML tags are keywords (tag names) surrounded by angle brackets</p>
+        <ul>
+            <li>The first tag in a pair is the <mark>start tag</mark>, the second tag is the<mark> end tag</mark></li>
+            <li>The end tag is written like the start tag, but with a forward slash inserted before the tag name</li>
+            <li>Some tags are empty and have no content, like br tag</li>
+        </ul>
+
+    </div>
+     <button class="backtohome"><a href="#top">back to home</a></button>
+    <div class="container3">
+            <h2 id="attributes">Attributes</h2>
+            <h3>What are HTML Attributes?</h3>
+            <p>HTML attributes provide additional information about HTML elements. They are always specified<br> in the start tag and usually come in name/value pairs like: name="value"</p>
+            <h3>Common HTML Attributes</h3>
+            <ul>
+                <li><strong>href</strong>- Specifies the URL of the page the link goes to</li>
+                <li><strong>src</strong>- Specifies the path to the image</li>
+                <li><strong>alt</strong>- Specifies an alternate text for an image</li>
+                <li><strong>width</strong>- Specifies the width of an element</li>
+                <li><strong>height</strong>- Specifies the height of an element</li>
+                <li><strong>style</strong>-  Specifies an inline CSS style for an element</li>
+                <li><strong>class</strong>- Specifies one or more class names for an element</li>
+                <li><strong>id</strong>- Specifies a unique id for an element</li>
+            </ul>
+    </div>
+     <button class="backtohome"><a href="#top">back to home</a></button>
+    <div class="container4">
+        <h2 id="heading">Headings & Paragraphs</h2>
+        <h3>HTML Headings</h3>
+        <p>HTML headings are defined with the<b>h1</b> to <b>h6</b>tags. h1 is the most important heading, and h6 is the least important.</p>
+        <h3>Important Heading Rules</h3>
+        <ul>
+            <li>Use only one <b>h1</b> per page - this should be the main title</li>
+            <li>Don't skip heading levels</li>
+        </ul>
+        <h3>HTML Paragraphs</h3>
+        <p>HTML paragraphs are defined with the p tag.</p>
+        <p><strong>Breaking Lines</strong></p>
+        <p>Use the br tag to insert a line break</p>
+    </div>
+     <button class="backtohome"><a href="#top">back to home</a></button>
+    <div class="container5">
+        <h2 id="text">Text Formatting</h2>
+        <h3>HTML Text Formatting Elements</h3>
+        <p>HTML provides several elements to format text and make it more visually appealing or semantically meaningful.</p>
+        <h3>Basic Text Formatting</h3>
+        <p><strong>Bold Text</strong></p>
+        <p>Use <u>b</u> for bold text without semantic importance or <b>strong</b> for text of great importance</p>
+        <p><strong>Italic Text</strong></p>
+        <p>Use <u>i</u> for italic text without semantic importance or <u>em</u> for emphasized text</p>
+        <p><strong>Subscript and Superscript</strong></p>
+        <p>Use <mark>sub</mark> for subscript or <mark>sup</mark> for superscript</p>
+    </div>
+     <button class="backtohome"><a href="#top">back to home</a></button>
+    <div class="container6">
+        <h2 id="links">Links and Anchors</h2>
+        <h3>HTML Links</h3>
+        <p>Links are created using the <b>a</b> (anchor) element. The href attribute specifies the destination of the link.</p>
+        <h3>Types of Links</h3>
+        <p><strong>Absolute URLs</strong></p>
+        <p>Links to external websites with full URLs</p>
+        <p><strong>Relative URLs</strong></p>
+        <p>Links to pages within the same website</p>
+        <h3>Link Attributes</h3>
+        <p><strong>Target Attribute</strong></p>
+        
+    </div>
+    <button class="backtohome"><a href="#top">back to home</a></button>
+    <div class="container01">
+        <a href="#introduction1" class="intro-btn"><strong>Introduction to css</strong></a>
+        <a href="#syntax" class="syn-btn"><strong>CSS Syntax & Selectors</strong></a>
+        <a href="#colors" class="color-btn"><strong>Colors</strong></a>
+        <a href="#background" class="bg-btn"><strong>Backgrounds</strong></a>
+        <a href="#borders" class="border-btn"><strong>Borders</strong></a>
+        <a href="#margins" class="margin-btn"><strong>Margins</strong></a>
+    </div>
+    <div class="container7" id="css">
+        <h2 id="introduction1">Introduction to CSS</h2>
+        <h3>What is CSS?</h3>
+        <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML. <br>CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+        <p>CSS is one of the core technologies of the World Wide Web, alongside HTML and JavaScript. It controls the visual appearance <br>of web pages, including colors, fonts, layouts, and responsive behaviors.</p>
+        <h3>How CSS Works</h3>
+        <p>CSS works by associating rules with HTML elements. These rules determine how the content of specified elements should be displayed.<br> A CSS rule contains two parts: a selector and a declaration.</p>
+        <ul>
+            <li><strong>Selector</strong>- Points to the HTML element you want to style</li>
+            <li><strong>Declaration</strong>- The style you want to apply to the selected element</li>
+            <li><strong>Property</strong>- The aspect of the element you want to change (color, font-size, etc.)</li>
+            <li><strong>Value</strong>- The setting you want to assign to the property</li>
+        </ul>
+    </div>
+     <button class="backtohome"><a href="#top">back to home</a></button>
+    <div class="container8">
+        <h2 id="syntax">CSS Syntax & Selectors</h2>
+        <h3>CSS Rule Structure</h3>
+        <p>A CSS rule consists of a selector and a declaration block. The declaration block contains one or more declarations separated by semicolons.<br> Each declaration includes a CSS property name and a value, separated by a colon.</p>
+        <p><strong>selector { property: value; property: value; }</strong></p>
+        <h3>CSS Selectors</h3>
+        <h3>Element Selectors</h3>
+        <p><strong> { color: blue; } p { font-size: 16px; }</strong></p>
+        <h3>ID Selectors</h3>
+        <p><strong>#header { background-color: #333; color: white; padding: 20px; }</strong></p>
+
+    </div>
+     <button class="backtohome"><a href="#top">back to home</a></button>
+    <div class="container9">
+        <h2 id="colors">Colors</h2>
+        <h3>CSS Colors</h3>
+        <p> Colors in CSS are used to give style to HTML elements. CSS supports several ways to specify colors including named colors, hexadecimal, RGB, RGBA, HSL, and HSLA values.</p>
+        <h3>Color Names</h3>
+        <p>CSS supports <mark>140</mark> named colors. These are simple to use but offer limited options</p>
+        <p><strong>.red { color: red; } .blue { color: blue; } .green { color: green; } .purple { color: purple; }</strong></p>
+        <h3>Hexadecimal Colors</h3>
+        <p>Hex colors are specified with a # followed by 3 or 6 hexadecimal characters (0-9, A-F)</p>
+        <h3>RGB Colors</h3>
+        <p>RGB colors are specified with rgb() and three values from 0 to 255</p>
+
+    </div>
+     <button class="backtohome"><a href="#top">back to home</a></button>
+    <div class="container10">
+        <h2 id="background">Backgrounds</h2>
+        <h3>CSS Background Properties</h3>
+        <p>CSS background properties are used to define the background effects for elements. There are several background properties that can be used individually or as a shorthand property.</p>
+        <h3>Background Color</h3>
+        <p><strong>.background-example { background-color: #ff6b6b; } .transparent-bg { background-color: transparent; } .named-color { background-color: lightblue; }</strong></p>
+        <h3>Background Image</h3>
+        <p><strong>.background-image { background-image: url("image.jpg"); }</strong></p>
+        <h3>Background Repeat</h3>
+        <p><strong>.background-image {background-repeat: no-repeat; }<strong></p>
+
+    </div>
+     <button class="backtohome"><a href="#top">back to home</a></button>
+    <div class="container11">
+        <h2 id="borders">Borders</h2>
+        <h3>CSS Border Properties</h3>
+        <p>The CSS border properties allow you to specify the style, width, and color of an element's border. There are several border properties that can be used individually or as shorthand properties.</p>
+        <h3>Border Style</h3>
+        <p>The border-style property specifies what kind of border to display</p>
+        <h3>Border Width</h3>
+        <p>The border-width property specifies the width of the border</p>
+        <h3>Border Color</h3>
+        <p>The border-color property specifies the color of the border</p>
+    </div>
+     <button class="backtohome"><a href="#top">back to home</a></button>
+    <div class="container12">
+        <h2 id="margins">Margins</h2>
+        <h3>CSS Margin Properties</h3>
+        <p>The CSS margin properties are used to create space around elements, outside of any defined borders. Margins can be set for all sides of an element or for specific sides.</p>
+        <h3>Margin Values</h3>
+        <p><strong>.length-margin { margin: 20px; } </strong></p>
+        <p><strong>.percentage-margin { margin: 5%; }</strong></p>
+        <p><strong>.auto-margin { margin: 0 auto; }</strong></p>
+        <h3>Individual Margin Sides</h3>
+        <p><strong>.top-margin { margin-top: 20px; }</strong></p>
+    </div>
+    <button class="backtohome"><a href="#top">back to home</a></button>
+    
+</body>
+</html>
