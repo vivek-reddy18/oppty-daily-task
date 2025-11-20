@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS BASICS</title>
+    <style>
+        
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .head {
+         color: brown;
+         background-color: peru;
+         margin-left: 600px;
+         display: inline-block;
+         margin-top: 10px;
+         
+        }
+         h1 {
+            color:brown;
+            
+        }
+          p {
+            font-size: 16px;
+        } 
+         #header {
+            color:brown;
+            padding: 10px;
+            text-align: center;
+        }
+        
+          h2, h3 {
+            color: #11e711;
+            font-family: Arial, sans-serif;
+        }
+        p, div {
+            line-height: 1.6;
+        }
+         .container {
+            border: 2px solid brown;
+            padding: 20px;
+            margin: 20px;
+        }
+        .color{
+            color:brown;
+            text-align: center;
+        }
+        .hex-color{
+          color:#33ff34;
+        }
+        .rgb-color{
+          color:rgb(58, 13, 224);
+        }
+        .rgba-color{
+          color:rgba(255, 0, 0, 0.5)
+        }
+        .background{
+          color:brown;
+          text-align: center;
+          
+        }
+        .background-color{
+          background-color: purple;
+          display: inline-block;
+        }
+        .background-image{
+          background-image: url(virat.webp);
+          background-repeat: no-repeat;
+        }
+        .border{
+          color:brown;
+          text-align: center;
+        }
+        .dotted-border {
+         border: 3px dotted #ff6b6b;
+         padding: 20px;
+         margin: 10px 0;
+          border-radius: 5px;
+          background-color: #764ba2;
+        }
+        .double-border {
+         border: 6px double #764ba2;
+         padding: 20px;
+         margin: 10px 0;
+         border-radius: 5px;
+         background-color: #33ff34;
+        }
+        .circle-border {
+         border: 3px solid #ee5a24;
+          border-radius: 50%;
+          width: 150px;
+          height: 150px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 10px 0;
+          background-color: blue;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+  <h1 class="head">CSS BASICS</h1>
+    <div class="container">
+        <div id="header">
+            <h1> CSS Syntax & Selectors </h1>
+        </div>
+
+        <h2>This is a heading (Grouped Selector Example)</h2>
+        <h3>This is another heading</h3>
+
+        <p>This is a paragraph styled using an <mark>element selector</mark></p>
+      </div>
+      <div class="container">
+        <h1 class="color"> CSS COLORS</h1>
+        <p class="hex-color">colors are very important in css</p>
+        <p class="rgb-color">colors are very important in css</p>
+        <p class="rgba-color">colors are very important in css</p>
+      </div>
+      <div class="container">
+        <h2 class="background">CSS BACKGROUND</h2>
+
+        <p class="background-color">background makes the picture beautiful</p><br><br>
+        <p class="background-image">Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.<br> Maxime delectus labore necessitatibus <br>dolores earum nesciunt, eaque <br>voluptates culpa vel assumenda,<br> non porro odit sequi quidem <br>laborum nostrum! Ab,<br> reprehenderit placeat?</p>
+        </div>
+        <div class="container">
+          <h3 class="border">CSS BORDER</h3>
+          <p class="dotted-border">Borders are decorative lines that wrap around the padding and content of HTML elements,<br> appearing between an element's padding and margin</p>
+          <p class="double-border">Borders are decorative lines that wrap around the padding and content of HTML elements,<br> appearing between an element's padding and margin</p>
+          <p class="circle-border">This is circle border</p>
+        </div>
+</body>
+</html>
