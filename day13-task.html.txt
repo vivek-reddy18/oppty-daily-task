@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: bisque;
+            padding: 100px;
+            margin-left: 250px;
+        }
+        .exam{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            padding: 20px;
+            border:2px solid black;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            width: 200px;
+        }
+        button{
+            width:100px;
+            height:25px;
+            border: 1px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: gray;
+            margin-right: 15px;
+        }
+        button:hover{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="exam">
+        <h1>EXAMINATION RESULTS</h1>
+        <label for="user">Name:</label>
+        <input type="text" id="name" placeholder="Enter student name"><br><br>
+        <label for="maths">Maths:</label>
+        <input type="number" id="marks1" placeholder="Enter your maths marks"><br><br>
+        <label for="physics">Physics:</label>
+        <input type="number" id="marks2" placeholder="Enter your physics marks"><br><br>
+        <label for="chemistry">Chemistry:</label>
+        <input type="number" id="marks3" placeholder="Enter your chemistry marks"><br><br>
+
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="reset()">Reset</button>
+
+        <p id="result"></p>
+
+        
+    </div>
+    <script>
+        function calculate(){
+        let name=document.getElementById("name").value;
+        let marks1=document.getElementById("marks1").value;
+        let marks2=document.getElementById("marks2").value;
+        let marks3=document.getElementById("marks3").value;
+
+        
+        let total=parseFloat(marks1)+parseFloat(marks2)+parseFloat(marks3);
+        let average=total/3;
+        let output="";
+
+        if(marks1==="" || marks2==="" || marks3===""){
+            alert("please enter your marks");
+        }
+        if(average>=90){
+            output="A Grade";
+        }
+        else if(average>=75){
+            output="B Grade";
+        }
+        else if(average>=50){
+            output="C Grade";
+        }
+        else if(average<50){
+            output="Fail";
+        }
+        else{
+            output="invalid";
+        }
+
+        document.getElementById("result").innerHTML="Your Name : " + name +"<br>"+ "Your total : " + total +"<br>"+ "Your Average : " + average.toFixed(3) +"<br>"+ "Your Grade : " + output;
+
+        }
+        function reset(){
+            document.getElementById("name").value="";
+            document.getElementById("marks1").value="";
+            document.getElementById("marks2").value="";
+            document.getElementById("marks3").value="";
+            document.getElementById("result").innerHTML="";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: aqua;
+        
+        }
+        .container{
+            text-align: left;
+            padding: 50px;
+            
+        }
+        button{
+            background-color: black;
+            color:white;
+            border:1px solid orange;
+            border-radius: 10px;
+            width:100px;
+            height:25px;
+            cursor: pointer;
+        }
+        #result{
+            color:blue;
+            font-size: 20px;
+        }
+        input{
+            border:1px solid orange;
+            width:200px;
+            height: 25px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="number" id="num" placeholder="Enter a number">
+        <button onclick="checking()">Check</button>
+        <p id="result"></p>
+
+    </div>
+    <script>
+        function checking(){
+            let num=document.getElementById("num").value;
+            let result=document.getElementById("result");
+            
+            if(num%2==0){
+                document.body.style.backgroundColor="lightgreen";
+                result.innerHTML=num +" is even";
+
+            }
+            else{
+                document.body.style.backgroundColor="orange";
+                result.innerHTML=num +"  is odd";
+            }
+        }
+
+  
+    </script>
+
+</body>
+</html>

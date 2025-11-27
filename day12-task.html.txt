@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: beige;
+            padding: 50px;
+            
+        }
+        .calculator{
+            width:300px;
+            height: 250px;
+            border:1px solid black;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            background-color: black;
+            color: white;
+            width: 100px;
+            height: 25px;
+            cursor: pointer;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        input{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>BMI CALCULATOR</h1>
+        <input type="number" id="weight" placeholder="Enter your weight in kg"><br><br>
+        <input type="number" id="height" placeholder="Enter your height in meters"> <br><br>
+        <button onclick="calculator()">Calculate</button>
+        <button onclick="clearFields()">Clear</button>
+
+        <p id="result"></p>
+
+    </div>
+    <script>
+        function calculator(){
+             let weight=document.getElementById("weight").value;
+             let height=document.getElementById("height").value;
+
+             let BMI=weight/(height*height);
+             let output="";
+
+             if(BMI<18.5){
+                  output="Below Weight";
+             }
+             else if(BMI>=18.5 && BMI<=24.9){
+                 output="Correct Weight";
+             }
+             else if(BMI>=25 && BMI<=29.9){
+                  output="More Weight";
+             }
+             else if(BMI>=30 && BMI<=35.9){
+                  output="Obese1";
+             }
+             else if(BMI>=36 && BMI<=40.9){
+                  output="Obese2";
+             }
+             else if(BMI>=41 && BMI<=50) {
+                output="Obese3";
+             }
+             else{
+                output="invalid";
+             }
+
+             document.getElementById("result").innerHTML="BMI is " + BMI.toFixed(2) + "<br>" +"Category : " + output;
+
+
+        }  
+        function clearFields(){
+            document.getElementById("weight").value="";
+            document.getElementById("height").value="";
+            document.getElementById("result").innerHTML="";
+        }     
+    </script>
+</body>
+</html>
