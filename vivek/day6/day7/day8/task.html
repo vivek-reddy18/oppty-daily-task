@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .container{
+            background-color: gray;
+            border: 1px solid black;
+            text-align: left;
+            width:400px;
+            height: 600px;
+            padding: 20px;
+            margin-left: 500px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h1>Login Form</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="enter full name"><br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="enter your email"><br><br>
+      <label for="phone">Phone number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="enter your number"><br><br>
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject">
+        <option>select a subject</option>
+        <option>cse</option>
+        <option>ece</option>
+        <option>eee</option>
+      </select><br><br>
+      <label for="priority">Priority:</label>
+      <input type="radio" id="low" name="priority" value="low">
+      <label for="low">Low</label>
+      <input type="radio" id="medium" name="priority" value="medium">
+      <label for="medium">Medium</label>   
+      <input type="radio" id="high" name="priority" value="high">
+      <label for="high">High</label> <br><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="6" cols="50" placeholder="enter your message"></textarea><br><br>
+      <label for="attachment">Attachment(optional):</label><br>
+      <input type="file" id="attachment" name="attachment"><br><br>
+      <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+      <label for="newsletter">Subscribe to our newsletter</label><br><br>
+      <input type="checkbox" id="agree" name="agree" required>
+      <label for="agree">I agree to the <a href="#">terms and conditions</a></label><br><br>
+      <button type="send">Send message</button>
+      <button type="reset">Reset</button>
+    </div>
+</body>
+</html>

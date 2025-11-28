@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .container{
+            width:300px;
+            height: 400px;
+            border: 1px solid black;
+            padding:10px;
+            background-color: aqua;
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+            width: 100px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid black;
+            cursor: pointer;
+            background-color:brown;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Details</h1>
+        <p id=name></p>
+        <p id=age></p>
+        <p id=city></p>
+        <p id=phone></p>
+        <p id=dob></p>
+        <p id=message></p>
+
+        <button onclick="changename()">ChangeName</button>
+        <button onclick="changephone()">ChangePhone</button>
+        <button onclick="changeage()">ChangeAge</button>
+        <button onclick="changecity()">ChangeCity</button>
+    </div>
+    <script>
+        var Name="Vivek Reddy";
+        const Age="23";
+        let City="Tirupathi";
+        var Phone="9182238987";
+        const Dob="21-11-2002";
+        var Message="Yandodu Vivek Reddy";
+
+        function displayDetails(){
+            document.getElementById("name").innerHTML="Name:" + Name;
+            document.getElementById("age").innerHTML="Age:" + Age;
+            document.getElementById("city").innerHTML="City:" + City;
+            document.getElementById("phone").innerHTML="Phone:" + Phone;
+            document.getElementById("dob").innerHTML="Dob:" + Dob;
+            document.getElementById("message").innerHTML="Message:" + Message;
+
+            
+    
+         }                    
+          displayDetails();
+
+
+          function changename(){
+            Name="Reddy Vivek";
+            displayDetails();
+          }
+          function changephone(){
+            Phone="8096834468";
+            displayDetails();
+          }
+          function changeage(){
+            Age="30";
+            displayDetails();
+          }
+          function changecity(){
+            City="Hyderabad";
+            displayDetails();
+          }
+    </script>
+</body>
+</html>

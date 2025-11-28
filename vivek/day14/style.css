@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    background: linear-gradient(90deg, #31006F, #5C0F78);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;        
+    justify-content: space-between; 
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;       
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: 2px solid #ff7b5a;
+    background: transparent;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+.crypto{
+    display: flex;
+    background:linear-gradient(90deg, #31006F, #5C0F78) ;
+    padding: 40px 80px;
+    justify-content: space-around;
+}
+h2{
+   color:white;
+   font-size: 50px;
+}
+p{
+    color:white;
+}
+.btn1{
+    background-color: #ff7b5a;
+    border-radius: 20px;
+    border: 1px solid  #ff7b5a ;
+    width:150px;
+    height: 40px;
+    cursor: pointer;
+    margin-top:20px;
+    text-align: center;
+}
+.container4{
+    transform: translateY(80px); 
+}
+.container5{
+    transform: translateY(-10px); 
+    background: transparent;
+
+}
+.table {
+    background-color: #31006F;
+}
+.table h2{
+    font-size: 40px;
+    text-align: center;
+}
+.table th,td{
+    width:200px;
+    height:40px;
+    text-align: left;
+}
+.text{
+    font-weight: 300;
+}
+.text1{
+    font-weight: 100;
+    font-size: 100px;
+}
