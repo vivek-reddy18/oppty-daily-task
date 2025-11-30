@@ -94,27 +94,32 @@ p{
     height:50px;
 }
 
-.table {
+.tables {
     background-color: #31006F;
-    border-collapse: collapse;
-    height:650px;
+    height: 600px;
+    
+
 }
-.table h2{
+table{
+    border-collapse: collapse;
+    height:450px;
+    width:1200px;
+    margin-left: 50px;
+}
+.tables h2{
     font-size: 40px;
     text-align: center;
     color: white;
 }
-.table th,td{
+.tables th,td{
     width:200px;
     height:40px;
     text-align: left;
     border-top: 1px solid white;
+    border-bottom: 1px solid white;
     
 
 
-}
-.table tbody,tr{
-    border-bottom: 1px solid white;
 }
 td p{
     color:gray;
@@ -188,12 +193,18 @@ td p{
     padding: 50px;
     justify-content: space-around;
 }
+.container111{
+    display: flex;
+    padding: 20px;
+    gap:20px;
+}
 .container11{
     padding: 100px;
 }
 .container11 h2{
     color:white;
     font-size: 40px;
+    
 }
 .container12{
     transform: translateY(40px);
@@ -203,8 +214,9 @@ td p{
     height:500px;
 }
 .img6{
-    width:300px;
-    height:75px;
+    width:150px;
+    height:50px;
+    border-radius: 10px;
 }
 .learn h2{
     color:black;
