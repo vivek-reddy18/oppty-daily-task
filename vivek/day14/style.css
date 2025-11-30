@@ -15,6 +15,14 @@ body {
     align-items: center;
     gap: 10px;
 }
+.img1{
+    width:50px;
+    height: 50px;
+}
+.img2{
+    width:500px;
+    height: 500px;
+}
 
 h1 {
     color: white;
@@ -48,10 +56,7 @@ h1 {
     padding: 40px 80px;
     justify-content: space-around;
 }
-h2{
-   color:white;
-   font-size: 50px;
-}
+
 p{
     color:white;
 }
@@ -73,22 +78,271 @@ p{
     background: transparent;
 
 }
+.container4 h2{
+    color:white;
+    font-size: 50px;
+}
+.container4 p{
+    color:white;
+}
+.img3{
+    width:20px;
+    height: 20px;
+}
+.img4{
+    width:100px;
+    height:50px;
+}
+
 .table {
     background-color: #31006F;
+    border-collapse: collapse;
+    height:650px;
 }
 .table h2{
     font-size: 40px;
     text-align: center;
+    color: white;
 }
 .table th,td{
     width:200px;
     height:40px;
     text-align: left;
+    border-top: 1px solid white;
+    
+
+
 }
+.table tbody,tr{
+    border-bottom: 1px solid white;
+}
+td p{
+    color:gray;
+    margin-left: 68px;
+    font-size: 13px;
+}
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+.small{
+    color:gray;
+    font-size: 10px;
+}
+.txt h2{
+    color:black;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+}
+.img5{
+    width:100px;
+    height: 100px;
+}
+
 .text{
     font-weight: 300;
 }
 .text1{
     font-weight: 100;
     font-size: 100px;
+}
+.container6{
+    display: flex;
+    padding:50px;
+    justify-content: space-around;
+}
+.container7 h2{
+    color:black;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+.container7 p{
+    color:black;
+}
+.container8 h2{
+    color:black;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+.container8 p{
+    color:black;
+}
+.container9 h2{
+    color:black;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+}
+.container9 p{
+    color:black;
+}
+
+.container10{
+    display: flex;
+    background-color: #31006F ;
+    padding: 50px;
+    justify-content: space-around;
+}
+.container11{
+    padding: 100px;
+}
+.container11 h2{
+    color:white;
+    font-size: 40px;
+}
+.container12{
+    transform: translateY(40px);
+}
+.img7{
+    width:600px;
+    height:500px;
+}
+.img6{
+    width:300px;
+    height:75px;
+}
+.learn h2{
+    color:black;
+    text-align: center;
+    font-size: 40px;
+}
+.container13{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
+.img8{
+    width:350px;
+    height: 300px;
+}
+.cards{
+    display: inline-block;
+    width: 350px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.cards p{
+    color:black;
+}
+.cards h3{
+    color:black;
+    font-weight: 500;
+}
+.container17{
+    background-color: #31006F ;
+    padding: 40px;
+}
+.container17 h2{
+    color:white;
+    text-align: center;
+    font-size: 40px;
+}
+.container17 h3{
+    color:white;
+    text-align: center;
+    font-size: 30px;
+}
+input{
+    margin-left: 20px;
+    background-color: transparent;
+    border:none;
+}
+.btn2{
+    width:200px;
+    height:50px;
+    border:1px solid  #ff7b5a;
+    border-radius: 60px;
+    background-color: #ff7b5a ;
+    margin-left: 55%;
+}
+.container18{
+    display: flex;
+    background:linear-gradient(90deg, #31006F, #5C0F78) ;
+    padding: 50px;
+    justify-content: space-around;
+    border-bottom:2px solid  white;
+    
+}
+.subcribe{
+    display: flex;
+    border:2px solid white;
+    border-radius: 50px;
+    width:50%;
+    margin:0 auto;
+    padding:10px;
+
+}
+.container19 h3{
+    color:white;
+    font-size: 25px;
+}
+.container19 p{
+    font-weight: 100;
+}
+.container20 h3{
+    color:white;
+    font-size:25px;
+}
+.container20 p{
+    font-weight: 100;
+}
+.container21 h3{
+    color:white;
+    font-size: 25px;
+}
+.container21 p{
+    font-weight: 100;
+}
+.container22 h3{
+    color:white;
+    font-size: 25px;
+}
+.container22 p{
+    font-weight: 100;
+}
+.container23 h3{
+    color:white;
+    font-size: 25px;
+}
+.container23 p{
+    font-weight: 100;
+}
+.container24 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #31006F, #5C0F78);
+    padding: 20px;
+}
+
+.container26 {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border: 2px solid gray;
+    border-radius: 10px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i {
+    color: white;
+    font-size: 20px;
+}
+.twitter {
+    background: #F8605C;
+    border: none;
 }
