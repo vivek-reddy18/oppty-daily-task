@@ -1,0 +1,214 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color:#162556;
+    position: sticky;
+    top:0;
+}
+.container1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.img1{
+    width:50px;
+    height: 50px;
+    margin-left: 30px;
+}
+.container111 h2 {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+}
+.nav{
+    display: flex;
+    gap:50px;
+    margin-top: 30px;
+    padding: 20px 10px;
+    margin-right: 30px;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.image{
+    background-image: url(../images/beach.png);
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    color:white;
+    font-size: 100px;
+
+}
+.image p{
+    color: white;
+    font-size: 25px;
+    
+}
+.container2 h2{
+    font-size: 40px;
+    text-align: center;
+}
+.container2 p{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    padding: 40px;
+    
+
+}
+.cards{
+    width: 370px;
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+    transition:0.3s;
+    border: 2px solid transparent;
+    height: 250px;
+
+}
+.cards h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+.cards p{
+    font-size: 18px;
+     font-weight: 400;
+     margin-left: 20px;
+
+}
+.cards:hover{
+    border: 1px solid aqua;
+}
+.img2{
+    width:400px;
+    height:200px;
+}
+.opera{
+    background-color: whitesmoke;
+}
+.container4 h2{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+.container5{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    padding: 20px;
+}
+.container6{
+    width:400px;
+    height:600px;
+    border:2px solid transparent;
+    background: white;
+    border-radius: 10px;
+}
+.container6 h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.container6 h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.container6 p{
+    font-size: 16px;
+    align-items: left;
+    margin-left: 20px;
+}
+.btn1{
+    width:330px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
+    background-color: #1E90FF;
+}
+.btn2{
+    width:330px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
+    background-color:blueviolet;
+}
+.btn3{
+    width:330px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
+    background-color: darkblue;
+}
+.btn1:hover{
+    background-color:black;
+    color:white;
+}
+.btn2:hover{
+    background-color:black;
+    color:white;
+}
+.btn3:hover{
+    background-color:black;
+    color:white;
+}
+.footer{
+    background-color: #162556;
+    height:250px;
+}
+.footer1{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid white;
+}
+.container7 h2{
+    color: white;
+}
+.container8 a{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    
+}
+.container8{
+    margin-top: 25px;
+}
+.container9 a{
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+}
+.container9{
+    margin-top: 25px;
+}
+.container10 h2{
+    color:white;
+    text-align: center;
+    font-size: 35px;
+    
+}
+
+

@@ -1,0 +1,132 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #181f25;
+}
+.header{
+    border-bottom: 1px solid gray;
+}
+.images{
+    border-bottom: 1px solid white;
+}
+.container{
+    display: flex;
+    color:white;
+    margin-left: 50px;
+    gap:8px;
+    text-align: center;
+    margin-top: 60px;
+
+}
+.container a{
+    color:white;
+    text-decoration: none;
+}
+h1{
+    color: white;
+    margin-left: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: 0;
+    
+}
+label{
+    color:white;
+    font-size: 18px;
+    margin-left: 45px;
+    font-weight: 500;
+    display: block;
+
+}
+input{
+    width:300px;
+    height:40px;
+    margin-left: 40px;
+    color:grey;
+    padding-left: 15px;
+    font-size: 18px;
+    
+}
+.img1{
+    width:400px;
+    height:200px;
+}
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin-top: 20px;
+    
+    
+
+
+}
+.cards{
+    border: 2px solid black;
+    border-radius: 10px;
+    width:400px;
+    height:430px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 20px ;
+   
+}
+.cards h3{
+    color:brown;
+    font-size: 18px;
+
+}
+.cards a{
+    text-decoration: none;
+    color:black;
+    font-size: 25px;
+    font-weight: 500;
+}
+.btn{
+     width: 150px;
+     height: 50px;
+     border-radius: 25px;
+     border:none;
+     background: transparent;
+     color: white;
+     border:1px solid white;
+     font-size: 20px;
+     margin-left: 20px;
+     cursor: pointer;
+     margin-bottom: 20px;
+    
+}
+.btn:hover{
+    color:black;
+}
+
+.container3{
+    display: flex;
+    gap:20px;
+}
+.container3 a{
+    text-decoration: none;
+    color:white;
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.container4{
+    display: flex;
+    gap:10px;
+}
+.icon{
+    width:40px;
+    height: 40px;
+    border-radius: 40px;
+    border:2px solid white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.icon i{
+    color: white;
+    font-size: 20px;
+}

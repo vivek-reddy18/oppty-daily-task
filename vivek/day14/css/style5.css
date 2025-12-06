@@ -1,0 +1,205 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    background-color:blue;
+    position: sticky;
+    top:0;
+    height: 100px;
+}
+.container1{
+    display: flex;
+    justify-content: space-around;
+}
+.container2{
+    margin-top: 20px;
+}
+.container2 p{
+    color:white;
+}
+.container2 a{
+    color:white;
+}
+.btn{
+    margin-top: 35px;
+    width:100px;
+    height: 35px;
+    border-radius: 10px;
+    border:none;
+    color:black;
+    cursor: pointer;
+}
+.btn:hover{
+    text-decoration: underline;
+}
+h1{
+    color:black;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 10px;
+}
+.contact{
+    background-color: gray;
+    height: 1600px;
+    
+}
+input{
+    width:450px;
+    height:50px;
+    text-align: left;
+    border-radius: 30px;
+    padding-left: 20px;
+    font-size: 20px;
+    border:1px solid black;
+}
+.container4{
+    text-align: center;
+}
+.container5 h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.container5{
+    padding: 40px;
+    margin-left: 40px;
+}
+.img1{
+    width:50px;
+    height:50px;
+}
+.container6 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.cards {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 220px;
+    height: 230px;
+    text-align: center;
+    padding: 20px 10px;      
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;  
+    align-items: center; 
+    background-color: white; 
+    
+}
+.cards a{
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.cards:hover{
+    background-color: aliceblue;
+}
+.container7 h2{
+    font-size: 40px;
+    font-weight: 500;
+} 
+.container7{
+    padding: 40px;
+    margin-left: 40px;
+} 
+.container8{
+    display: flex;
+    gap:40px;
+    margin-left: 80px;
+    
+
+}
+.container9{
+    border:1px solid black;
+    border-radius: 10px;
+    width:220px;
+    height: 230px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    background-color: white;
+    
+}
+.container9 a{
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.container9:hover{
+    background-color: aliceblue;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    background-color: whitesmoke;
+}
+.container11{
+    display:flex;
+    gap: 50px;
+}
+.container10 h2{
+    color:blue;
+}
+.container10 p{
+    color:grey;
+    font-size: 18px;
+    font-weight: 400;
+}
+.container10 h3{
+    color:grey;
+    font-size: 18px;
+    font-weight: 400;
+}
+.container10 a{
+    text-decoration: none;
+    color:grey;
+    font-size: 18px;
+    font-weight: 400;
+}
+.container12 h2{
+    color:black;
+    font-size: 20px;
+}
+.container12 p{
+    color:grey;
+    font-size: 18px;
+    font-weight: 400;
+}
+.container13 h2{
+    color:black;
+    font-size: 20px;
+}
+.container13 p{
+    color:grey;
+    font-size: 18px;
+    font-weight: 400;
+}
+.container14 h2{
+    color:black;
+    font-size: 20px;
+}
+.container14 p{
+    color:grey;
+    font-size: 18px;
+    font-weight: 400;
+}
+.container15 h2{
+    color:black;
+    font-size: 20px;
+}
+.container15 p{
+    color:grey;
+    font-size: 18px;
+    font-weight: 400;
+}

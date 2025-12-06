@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <!-- Arrays -->
+     <h1>Javascript Arrays</h1>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+     <p id="demo2"></p>
+     <p id="demo3"></p>
+     <p id="demo4"></p>
+     <p id="demo5"></p>
+     <p id="demo6"></p>
+     <p id="demo7"></p>
+     <script>
+        const name=["vivek", "reddy", "yandodu"];
+        document.getElementById("demo").innerHTML= name[1];
+        
+     </script>
+     <script>
+        const Names=["vivek", "reddy", "yandodu"];
+        let myList= Names.toString();
+        document.getElementById("demo1").innerHTML=myList;
+     </script>
+     <script>
+        const names1=["vivek", "sai", "reddy", "yanodud","car"];
+        let size= names1.length;
+        document.getElementById("demo2").innerHTML="length:"+ size;
+     </script>
+     
+     <script>
+        const names2=["vivek", "sai", "reddy"];
+        document.getElementById("demo3").innerHTML=names2;
+        names2.push("yandodu");
+        document.getElementById("demo3").innerHTML=names2;
+    </script>
+     <script>
+        const names3=["vivek", "sai", "reddy"];
+        document.getElementById("demo4").innerHTML=names3;
+        names3.pop();
+        document.getElementById("demo4").innerHTML=names3;
+     </script>
+     <script>
+        const girls=["sai","sree","ramya"];
+        const boys=["vivek", "reddy", "ravi"];
+        const myChildren=girls.concat(boys);
+        document.getElementById("demo5").innerHTML=myChildren;
+     </script>
+     <script>
+        const cars=["bmw", "skoda", "audi"];
+        document.getElementById("demo6").innerHTML=cars;
+        cars.sort();
+        document.getElementById("demo6").innerHTML=cars;
+    </script>
+    <script>
+        const cars1=["bmw", "skoda", "audi"];
+        document.getElementById("demo7").innerHTML=cars1;
+        cars1.reverse();
+        document.getElementById("demo7").innerHTML=cars1;
+    </script>
+</body>
+</html>

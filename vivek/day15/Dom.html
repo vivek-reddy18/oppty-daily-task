@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+
+    
+</head>
+<body>
+
+
+
+<!-- Form -->
+<input type="text" id="username">
+<p id="message"></p>
+<script>
+
+    // ------- DOCUMENT + ELEMENTS -------
+    let inputElement = document.getElementById("username");   
+    let message = document.getElementById("message");                       
+
+    // ------- HTML MANIPULATION -------
+    message.innerHTML = "Your name is: " + inputElement.value;
+
+    // ------- CSS MANIPULATION -------
+    body.style.background = "skyblue";       
+    body.style.color = "white";
+    
+</script>
+
+</body>
+</html>

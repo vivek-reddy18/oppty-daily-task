@@ -39,6 +39,8 @@ h1 {
     text-decoration: none;
     color: white;
     font-weight: 400;
+}.nav a:hover{
+    text-decoration: underline;
 }
 
 .btn {
@@ -55,6 +57,7 @@ h1 {
     background:linear-gradient(90deg, #31006F, #5C0F78) ;
     padding: 40px 80px;
     justify-content: space-around;
+    
 }
 
 p{
@@ -97,6 +100,7 @@ p{
 .tables {
     background-color: #31006F;
     height: 600px;
+    padding: 40px;
     
 
 }
@@ -117,9 +121,6 @@ table{
     text-align: left;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    
-
-
 }
 td p{
     color:gray;
@@ -358,4 +359,140 @@ input{
 .twitter {
     background: #F8605C;
     border: none;
+}
+/* MOBILE (max-width: 600px) */
+@media (max-width: 600px) {
+
+   
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    
+    .crypto {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .img2 {
+        width: 150px;
+        height: 150px;
+       
+        
+        
+
+    }
+    .container5{
+        justify-content: center;
+        margin-top: 100px;
+        transform: translateX(-50px);
+    
+    }
+
+   
+    table {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .tables {
+        padding: 10px;
+        height: auto;
+    }
+
+    
+    .container6 {
+        flex-direction: column;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .img5 {
+        width: 80px;
+        height: 80px;
+    }
+    .container7 p{
+        text-align: left;
+    }
+    .container8 p{
+        text-align: left;
+    }
+    .container9 p{
+        text-align: left;
+    }
+
+    
+    .container10 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container11 {
+        padding: 20px;
+    }
+
+    .img7 {
+       width: 150px;    
+        height: auto;
+      
+    }
+    .container12{
+        transform: translateX(-70px);
+
+    }
+
+    .container111 {
+        justify-content: center;
+    }
+
+   
+    .container13 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+   
+    .container18 {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .subcribe {
+        width: 90%;
+    }
+
+    .btn2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container24 {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .container26 {
+        justify-content: center;
+    }
 }

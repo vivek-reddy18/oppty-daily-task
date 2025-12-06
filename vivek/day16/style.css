@@ -1,0 +1,19 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    border: 1px solid black;
+    width:200px;
+    height: 150px;
+    text-align: center;
+    background-color: aqua;
+    animation: moveBox 2s ease-in-out infinite;
+}
+@keyframes moveBox {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1000px);
+  }
+}
