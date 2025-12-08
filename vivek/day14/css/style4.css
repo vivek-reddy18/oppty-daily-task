@@ -335,15 +335,21 @@ h1{
     height: 300px;
     margin-top: 40px;
 }
+.container11{
+    display: grid;
+}
 .container11 h2{
     color: white;
     font-size: 40px;
     margin-left: 30px;
+    margin-bottom: 5px;
 }
 .container11 p{
     color:white;
     font-size: 20px;
     margin-left:30px ;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 .btn7{
     border: none;
@@ -354,6 +360,7 @@ h1{
     cursor: pointer;
     color: white;
     font-size: 18px;
+    margin-top: 0;
     
 }
 .btn7:hover{
@@ -394,6 +401,7 @@ h1{
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid white;
+    padding: 20px;
 }
 .container15 h2,
 .container16 h2,
