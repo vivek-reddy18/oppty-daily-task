@@ -40,7 +40,7 @@ h1{
 }
 .contact{
     background-color: gray;
-    height: 1600px;
+    height: 100%;
     
 }
 input{
@@ -150,11 +150,13 @@ input{
 }
 .container10 h2{
     color:blue;
+    margin-bottom: 5px;
 }
 .container10 p{
     color:grey;
     font-size: 18px;
     font-weight: 400;
+    margin-top: 0;
 }
 .container10 h3{
     color:grey;
@@ -170,11 +172,13 @@ input{
 .container12 h2{
     color:black;
     font-size: 20px;
+
 }
 .container12 p{
     color:grey;
     font-size: 18px;
     font-weight: 400;
+    
 }
 .container13 h2{
     color:black;
