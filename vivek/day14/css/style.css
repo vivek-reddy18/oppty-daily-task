@@ -9,6 +9,9 @@ body {
     align-items: center;        
     justify-content: space-between; 
 }
+.svg{
+     background-color:  #31006F;
+}
 
 .container1 {
     display: flex;
@@ -39,7 +42,8 @@ h1 {
     text-decoration: none;
     color: white;
     font-weight: 400;
-}.nav a:hover{
+}
+.nav a:hover{
     text-decoration: underline;
 }
 

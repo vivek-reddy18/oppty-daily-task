@@ -1,19 +1,36 @@
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.header{
+   background: linear-gradient(90deg, #31006F, #5C0F78);
+   padding: 20px 40px;
+   display: flex;
+   align-items: center;        
+   justify-content: space-between; 
 }
-.container{
-    border: 1px solid black;
-    width:200px;
-    height: 150px;
-    text-align: center;
-    background-color: aqua;
-    animation: moveBox 2s ease-in-out infinite;
+.container01{
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
-@keyframes moveBox {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(1000px);
-  }
+.img{
+  width:50px;
+  height:50px;
+}
+.container02 h2{
+  color: white;
+}
+.container03 a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+
+}
+.trade{
+    border-radius: 20px;
+    border: 2px solid #ff7b5a;
+    background: transparent;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    width:100px;
+    height: 40px;
 }

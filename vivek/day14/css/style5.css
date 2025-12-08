@@ -2,36 +2,42 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .header{
-    background-color:blue;
-    position: sticky;
-    top:0;
-    height: 100px;
+   background: linear-gradient(90deg, #31006F, #5C0F78);
+   padding: 20px 40px;
+   display: flex;
+   align-items: center;        
+   justify-content: space-between; 
 }
-.container1{
-    display: flex;
-    justify-content: space-around;
+.container01{
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
-.container2{
-    margin-top: 20px;
+.img{
+  width:50px;
+  height:50px;
 }
-.container2 p{
-    color:white;
+.container02 h2{
+  color: white;
 }
-.container2 a{
-    color:white;
+.container03 a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+
 }
-.btn{
-    margin-top: 35px;
-    width:100px;
-    height: 35px;
-    border-radius: 10px;
-    border:none;
-    color:black;
+.trade{
+    border-radius: 20px;
+    border: 2px solid #ff7b5a;
+    background: transparent;
+    color: white;
+    font-weight: 500;
     cursor: pointer;
+    width:100px;
+    height: 40px;
 }
-.btn:hover{
-    text-decoration: underline;
-}
+
 h1{
     color:black;
     font-size: 50px;
@@ -40,7 +46,7 @@ h1{
 }
 .contact{
     background-color: gray;
-    height: 100%;
+    height: 1600px;
     
 }
 input{
@@ -138,72 +144,9 @@ input{
 .container9:hover{
     background-color: aliceblue;
 }
-.footer{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    background-color: whitesmoke;
-}
-.container11{
-    display:flex;
-    gap: 50px;
-}
 .container10 h2{
-    color:blue;
-    margin-bottom: 5px;
-}
-.container10 p{
-    color:grey;
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 0;
-}
-.container10 h3{
-    color:grey;
-    font-size: 18px;
-    font-weight: 400;
-}
-.container10 a{
-    text-decoration: none;
-    color:grey;
-    font-size: 18px;
-    font-weight: 400;
-}
-.container12 h2{
-    color:black;
-    font-size: 20px;
-
-}
-.container12 p{
-    color:grey;
-    font-size: 18px;
-    font-weight: 400;
-    
-}
-.container13 h2{
-    color:black;
-    font-size: 20px;
-}
-.container13 p{
-    color:grey;
-    font-size: 18px;
-    font-weight: 400;
-}
-.container14 h2{
-    color:black;
-    font-size: 20px;
-}
-.container14 p{
-    color:grey;
-    font-size: 18px;
-    font-weight: 400;
-}
-.container15 h2{
-    color:black;
-    font-size: 20px;
-}
-.container15 p{
-    color:grey;
-    font-size: 18px;
-    font-weight: 400;
+    color: #31006F;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
 }

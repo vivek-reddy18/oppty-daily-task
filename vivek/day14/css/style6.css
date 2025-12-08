@@ -3,49 +3,42 @@ body{
     background-color: #181f25;
 }
 .header{
-    border-bottom: 1px solid gray;
+   background: linear-gradient(90deg, #31006F, #5C0F78);
+   padding: 20px 40px;
+   display: flex;
+   align-items: center;        
+   justify-content: space-between; 
 }
-.images{
-    border-bottom: 1px solid white;
+.container01{
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
-.container{
-    display: flex;
-    color:white;
-    margin-left: 50px;
-    gap:8px;
-    text-align: center;
-    margin-top: 60px;
+.img{
+  width:50px;
+  height:50px;
+}
+.container02 h2{
+  color: white;
+}
+.container03 a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
 
 }
-.container a{
-    color:white;
-    text-decoration: none;
-}
-h1{
+.trade{
+    border-radius: 20px;
+    border: 2px solid #ff7b5a;
+    background: transparent;
     color: white;
-    margin-left: 40px;
-    font-size: 60px;
-    font-weight: 600;
-    margin-top: 0;
-    
-}
-label{
-    color:white;
-    font-size: 18px;
-    margin-left: 45px;
     font-weight: 500;
-    display: block;
+    cursor: pointer;
+    width:100px;
+    height: 40px;
+}
 
-}
-input{
-    width:300px;
-    height:40px;
-    margin-left: 40px;
-    color:grey;
-    padding-left: 15px;
-    font-size: 18px;
-    
-}
 .img1{
     width:400px;
     height:200px;
@@ -56,6 +49,7 @@ input{
     justify-content: space-around;
     max-width: 1400px;
     margin-top: 20px;
+    padding: 30px;
     
     
 

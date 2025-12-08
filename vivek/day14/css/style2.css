@@ -2,39 +2,42 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .header{
-    display: flex;
-    justify-content: space-between;
-    background-color:#162556;
-    position: sticky;
-    top:0;
+   background: linear-gradient(90deg, #31006F, #5C0F78);
+   padding: 20px 40px;
+   display: flex;
+   align-items: center;        
+   justify-content: space-between; 
 }
-.container1 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.container01{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.img{
+  width:50px;
+  height:50px;
+}
+.container02 h2{
+  color: white;
+}
+.container03 a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
 
 }
-.img1{
-    width:50px;
-    height: 50px;
-    margin-left: 30px;
-}
-.container111 h2 {
+.trade{
+    border-radius: 20px;
+    border: 2px solid #ff7b5a;
+    background: transparent;
     color: white;
-    font-size: 25px;
-    margin: 0;
+    font-weight: 500;
+    cursor: pointer;
+    width:100px;
+    height: 40px;
 }
-.nav{
-    display: flex;
-    gap:50px;
-    margin-top: 30px;
-    padding: 20px 10px;
-    margin-right: 30px;
-}
-.nav a{
-    text-decoration: none;
-    color: white;
-}
+
 .image{
     background-image: url(../images/beach.png);
     padding: 20px;
