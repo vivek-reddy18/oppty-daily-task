@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            border:2px solid black;
+            width:200px;
+            height:100px;
+            animation: bounce 2s ease-in-out infinite;
+            
+
+        }
+        h1{
+            text-align: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        @keyframes   bounce {
+            0%{transform: translateX(0);}
+            50% {transform: translateX(400px);}
+            
+        }
+    </style>
 </head>
 <body>
-    <section class="header">
-        <div class="container01">
-            <div class="container02">
-                <img src="logo.png" class="img">
-            </div>
-            <div class="container02">
-                <h2>Cryptous</h2>
-            </div>
-        </div>
-        <div class="container03">
-            <a href="#">Home</a>
-            <a href="#">Company</a>
-            <a href="#">About</a>
-            <a href="#">Pricing</a>
-            <a href="#">Team</a>
-            <a href="#">Contact</a>
-            <a href="#">Blog</a>
-        </div>
-        <button class="trade">Trade Now</button>
-    </section>
+    <div class="container">
+        <h1>Vivek Reddy</h1>
+    </div>
 </body>
 </html>

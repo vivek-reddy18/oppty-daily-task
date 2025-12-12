@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .container{
+            border: 2px solid black;
+            width:380px;
+            height: 300px;
+            text-align: center;
+            background-color:whitesmoke;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 50px;
+            margin-left: 80px;
+        }
+        h2{
+            color: black;
+            font-size: 30px;
+        }
+        input{
+            width:200px;
+            height: 30px;
+            color: gray;
+            border-radius: 10px;
+            border:none;
+            background-color: black;
+            
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            border: 2px solid black;
+            cursor: pointer;
+            background-color: aqua;
+        }
+        button:hover{
+            background-color: lightblue;
+        }
+        #tasklist{
+            color: black;
+            cursor: pointer;
+
+
+        }
+        #tasklist li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 5px 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>To Do List</h2>
+        <input type="text" id="task" placeholder="Enter your task">
+        <button onclick="add()">Add Task</button>
+        <ul id="tasklist"></ul>
+    </div>
+    <script>
+        function add(){
+             let input=document.getElementById("task");
+             let text=input.value.trim();
+
+             if(text===""){
+                alert("please enter your task");
+                return;
+             }
+             let li=document.createElement("li");
+
+             let span=document.createElement("span");
+             span.textContent=text;
+
+             let action=document.createElement("div");
+             action.className="actions";
+
+             let deleteIcon=document.createElement("i");
+             deleteIcon.className="fas fa-trash";
+             deleteIcon.addEventListener("click", function (){
+                li.remove();
+             });
+             action.appendChild(deleteIcon);
+
+             li.appendChild(span);
+             li.appendChild(action);
+
+             document.getElementById("tasklist").appendChild(li);
+             input.value="";
+        }
+    </script>
+</body>
+</html>
