@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head {
+            background-color: rgba(0, 0, 0, 0.801);
+        }
+
+        .head h2 {
+            color: white;
+            text-align: center;
+            font-size: 50px;
+            padding: 10px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            border: 1px solid black;
+            margin-top: -30px;
+        }
+
+        .header a {
+            cursor: pointer;
+            font-size: 25px;
+            padding: 10px;
+        }
+
+        .hero1 {
+            border: 1px solid black;
+            width: 600px;
+            ;
+
+        }
+
+        .hero2 {
+            border: 1px solid black;
+            width: 600px;
+            height: 350px;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        button {
+        
+        }
+
+        table {
+            border-collapse: collapse;
+
+        }
+
+        table th,
+        td {
+            border: 1px solid black
+        }
+        .bottom{
+            background-color: white;
+        }
+
+        
+
+        .container7 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 30px;
+            /* flex-wrap: wrap;
+            max-width: 1100px; */
+            padding: 50px;
+        
+        }
+
+        .cards {
+            width: 300px;
+            height: 450px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+            animation: fade 2s ease-in-out infinite;
+        }
+        /* .cards:hover{
+            border: 2px solid aqua;
+            transition: 0.3s;
+        } */
+        .img1{
+            width:300px;
+            height: 300px;
+            border-radius: 10px;
+        }
+        /* @keyframes fade{
+            from{opacity: 0;}
+            to{opacity: 1;}
+        } */
+        .card1-btn{
+            text-align: right;
+            
+        
+        }
+        .card1-txt{
+            border-bottom: 1px solid black;
+            
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h2>My complete HTML & CSS Website</h2>
+    </div>
+    <section class="header">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </section>
+    <section class="hero">
+        <section class="hero1">
+            <div class="container">
+                <h2>Text & Lists</h2>
+            </div>
+            <hr>
+            <div class="container1">
+                <h2>Welcome</h2>
+            </div>
+            <div class="container3">
+                <p>This website demonstrates most Html elements using tables and forms and<br>css.</p>
+            </div>
+            <div class="container4">
+                <ul>
+                    <li>HTML Basics</li>
+                    <li>CSS Styling</li>
+                    <li>Table Layout</li>
+                </ul>
+            </div>
+            <div class="container5">
+                <ul>
+                    <li>Learn</li>
+                    <li>Practise</li>
+                    <li>Build</li>
+                </ul>
+            </div>
+        </section>
+        <section class="hero2">
+            <div class="container6">
+                <h2>Form elements</h2>
+            </div>
+            <hr>
+            <label for="name">Name: </label>
+            <input type="text" placeholder="Enter name"><br><br>
+            <label for="password">Password: </label>
+            <input type="password" placeholder="....."><br><br>
+            <label for="gender">Gender: </label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
+            <label for="skills">Skills:</label>
+            <input type="checkbox" value="Html">
+            <label for="html">Html</label>
+            <input type="checkbox" value="Css">
+            <label for="css">Css</label>
+            <input type="checkbox" value="java">
+            <label for="Java">Java</label><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" rows="4" placeholder="Type here"></textarea>
+            <button>submit</button>
+        </section>
+    </section>
+    <section class="footer">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vivek</td>
+                    <td>Developer</td>
+                    <td>TL</td>
+                </tr>
+                <tr>
+                    <td>Ravi</td>
+                    <td>Designer</td>
+                    <td>Manager</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="bottom">
+        <div class="container7">
+            <div class="cards">
+                <div class="card1.img">
+                    <img src="bg.jpg" class="img1">
+                </div>
+                <div class="card1-txt">
+                    <h2>VIVEK REDDY</h2>
+                    <P>vivek is a good boy</P>
+                </div>
+                <div class="card1-btn">
+                    <button>Sign</button>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card2.img">
+                    <img src="bg.jpg" class="img1">
+                </div>
+                <div class="card2.txt">
+                    <h2>VIVEK REDDY</h2>
+                    <P>vivek is a good boy</P>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card3.img">
+                    <img src="bg.jpg" class="img1">
+                </div>
+                <div class="card3.txt">
+                    <h2>VIVEK REDDY</h2>
+                    <P>vivek is a good boy</P>
+                </div>
+            </div>
+             <div class="cards">
+                <div class="card4.img">
+                    <img src="bg.jpg" class="img1">
+                </div>
+                <div class="card4.txt">
+                    <h2>VIVEK REDDY</h2>
+                    <P>vivek is a good boy</P>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

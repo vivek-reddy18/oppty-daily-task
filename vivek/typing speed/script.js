@@ -1,8 +1,8 @@
 
 const paragraphs = [
-    "The government announced a new digital initiative aimed at improving public services across the country.",
-    "Heavy rainfall continued to affect several regions on Tuesday, causing traffic disruptions and power outages in some areas.",
-    "The stock market opened on a positive note as investors reacted to strong global cues. Banking and technology shares led the gains in early trading."
+    "The government announced a new digital initiative aimed at improving public services across the country.Heavy rainfall continued to affect several regions on Tuesday, causing traffic disruptions and power outages in some areas",
+    "Heavy rainfall continued to affect several regions on Tuesday, causing traffic disruptions and power outages in some areas.The government announced a new digital initiative aimed at improving public services across the country",
+    "The stock market opened on a positive note as investors reacted to strong global cues. Banking and technology shares led the gains in early trading.The government announced a new digital initiative aimed at improving public services across the country"
 ];
 
 let timeLeft = 0;
@@ -54,7 +54,8 @@ function endTest() {
     }
 
     let totalWords = typedText.trim().split(/\s+/).length;
-    if (typedText.trim() === "") totalWords = 0;
+    if (typedText.trim() === "") 
+        totalWords = 0;
 
     let totalMinutes = Number(timeSelect.value) / 60;
     let wpm = Math.round(totalWords / totalMinutes);

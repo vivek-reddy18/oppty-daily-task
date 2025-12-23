@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Speed Test</title>
+
+    <!-- EmailJS CDN (MUST be before script.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Typing Speed Test</h1>
+
+    <!-- EMAIL -->
+    <input
+        type="email"
+        id="email-input"
+        placeholder="Enter your email"
+        class="email-input"
+    />
+
+    <!-- TIMER -->
+    <div class="time-box">
+        ⏱ Time Left: <b id="timer-display">60</b>s
+    </div>
+
+    <!-- PARAGRAPH -->
+    <div id="paragraph-display" class="paragraph">
+        Click Start to begin typing test...
+    </div>
+
+    <!-- TEXTAREA -->
+    <textarea
+        id="typing-input"
+        placeholder="Start typing here..."
+        disabled
+    ></textarea>
+
+    <!-- BUTTON -->
+    <button id="start-btn">Start Test</button>
+
+    <!-- RESULTS -->
+    <div id="results-section" class="result hidden">
+        <p><b>Speed:</b> <span id="wpm-result"></span> WPM</p>
+        <p><b>Accuracy:</b> <span id="accuracy-result"></span></p>
+        <p><b>Total Words:</b> <span id="words-result"></span></p>
+        <p><b>Time:</b> <span id="time-result"></span></p>
+    </div>
+
+    <!-- EMAIL STATUS -->
+    <div id="email-status" class="email-status"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
