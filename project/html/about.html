@@ -27,7 +27,26 @@
                     class="img"></a>
             <a href="https://dribbble.com/QodeInteractive" target="_blank"><img
                     src="../images/dribbble-brands-solid-full.svg" class="img"></a>
-            <a href="#"><img src="../images/magnifying-glass-solid-full.svg" class="img"></a>
+            <button id="openSearch"><img src="../images/magnifying-glass-solid-full.svg" class="img"></button>
+
+            <div class="search-box" id="searchBox">
+                <input type="text" placeholder="Search here...">
+                <button id="closeSearch">&times;</button>
+            </div>
+
+            <script>
+                const openSearch = document.getElementById("openSearch");
+                const closeSearch = document.getElementById("closeSearch");
+                const searchBox = document.getElementById("searchBox");
+
+                openSearch.addEventListener("click", () => {
+                    searchBox.classList.add("active");
+                });
+
+                closeSearch.addEventListener("click", () => {
+                    searchBox.classList.remove("active");
+                });
+            </script>
         </div>
     </section>
     <section class="header1">
