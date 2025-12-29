@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px dotted black;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.img{
+    width:20px;
+    height: 20px;
+
+}
+.img:hover{
+     opacity: 0.5;
+}
+.container1{
+    margin-top: 10px;
+    
+}
+.container1 a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 1px;
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.container1 a:hover{
+    color: #D1AF78;
+}
+.container2{
+    margin-top: 10px;
+}
+.container2 a{
+    padding: 5px;
+}
+.img1{
+    width:200px;
+    height: 100px;
+    margin-top: 30px;
+}
+.container3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container3 p{
+    color: rgb(169, 169, 169);
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.img2{
+    width: 1100px;
+    height: 500px;
+    margin-top: 50px;
+}
+.container4 h3{
+    text-decoration: underline;
+    color: #D1AF78;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.container4 h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+.line{
+    width: 40px;
+    height: 2px;
+    background: black;
+    margin: 18px auto;
+}
+.container4 p{
+    color: rgb(39, 37, 37);
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.container5 {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 30px;
+    margin-top: 50px;
+}
+.container16 h2{
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.container16 h2:hover{
+    color: #D1AF78;
+}
+.container17 a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 12px;
+
+}
+.container17{
+    margin-top: 15px;
+}
+.container17 a:hover{
+    color: #D1AF78;
+}
+.toTop{
+    all:initial;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(253, 254, 255);
+    border-radius: 50%;
+    position: fixed;
+    right:1rem;
+    bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    color: rgb(3, 3, 3);
+}
+.toTop:hover{
+    background-color: #D1AF78;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+

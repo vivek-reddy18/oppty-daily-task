@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/slider.css">
+</head>
+
+<body>
+    <div class="search-box">
+        <a href="#" id="searchIcon">
+            <img src="./images/magnifying-glass-solid-full.svg" class="img">
+        </a>
+        <input type="text" class="search-input" placeholder="Search...">
+    </div>
+    <script>
+    const searchIcon = document.getElementById("searchIcon");
+    const searchInput = document.querySelector(".search-input");
+
+    searchIcon.addEventListener("click", function (e) {
+        e.preventDefault();
+        searchInput.classList.toggle("active");
+        searchInput.focus();
+    });
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/contact.css">
+     <link rel="icon" href="https://bridge424.qodeinteractive.com/wp-content/themes/bridge/img/favicon.ico">
+</head>
+
+<body>
+    <section class="header">
+        <div class="container1">
+            <a href="../home.html">HOME</a>
+            <a href="../html/about.html">ABOUT</a>
+            <a href="../html/travel.html">TRAVELOGUE</a>
+            <a href="../html/photo.html">PHOTOGRAPHY</a>
+            <a href="../html/trends.html">TRENDS</a>
+            <a href="../html/contact.html">CONTACT</a>
+        </div>
+        <div class="container2">
+            <a href="https://www.facebook.com/" target="_blank"><img src="../images/facebook-f-brands-solid-full.svg"
+                    class="img"></a>
+            <a href="https://x.com/" target="_blank"><img src="../images/twitter-brands-solid-full.svg" class="img"></a>
+            <a href="https://in.pinterest.com/" target="_blank"><img src="../images/pinterest-brands-solid-full.svg"
+                    class="img"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram-brands-solid-full (1).svg"
+                    class="img"></a>
+            <a href="https://dribbble.com/QodeInteractive" target="_blank"><img
+                    src="../images/dribbble-brands-solid-full.svg" class="img"></a>
+            <a href="#"><img src="../images/magnifying-glass-solid-full.svg" class="img"></a>
+        </div>
+    </section>
+    <section class="header1">
+        <div class="container3">
+            <img src="../images/logo-dark.png" class="img1">
+            <p>BLOG DEMO FOR A THEMEFOREST BESTSELLER</p>
+            
+        </div>
+        <div class="container4">
+    
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4499.897655845219!2d12.585737!3d55.67249!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525315bbb3a2df%3A0x6c4cc2710ba0300c!2sDet%20Kgl.%20Bibliotek%2C%20The%20Royal%20Library!5e0!3m2!1sen!2sus!4v1766985548762!5m2!1sen!2sus" width="1100px" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="container5">
+            <h3>CONTACT</h3>
+            <h2>Contact me for any inquiries</h2>
+            <div class="line"></div>
+        </div>
+        <div class="container6">
+            <form id="contactForm">
+                <input type="text" placeholder="YOUR FULL NAME"><br><br>
+                <input type="email" placeholder="YOUR E-MAIL ADDRESS"><br><br>
+                <textarea id="message" rows="6" placeholder="WRITE YOUR MESSAGE"></textarea><br><br>
+                <button type="submit" class="contact" onclick="enter()">CONTACT ME</button>
+            </form>
+               <script>
+                document.getElementById("contactForm").addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    alert("Message sent successfully!");
+                    this.reset();
+                });
+
+            </script>
+            
+            
+        </div>
+        
+
+
+    </section>
+    <section class="footer">
+        <div class="container16">
+            <h2>© Copyright Qode Interactive</h2>
+        </div>
+        <div class="container17">
+            <a href="../home.html">HOME</a>
+            <a href="../html/about.html">ABOUT</a>
+            <a href="../html/travel.html">TRAVELOGUE</a>
+            <a href="../html/photo.html">PHOTOGRAPHY</a>
+            <a href="../html/trends.html">TRENDS</a>
+            <a href="../html/contact.html">CONTACT</a>
+             <button class="toTop">&#8679</button>
+        </div>
+        <script>
+            const toTop=document.querySelector(".toTop");
+            window.addEventListener("scroll",()=>{
+                if(window.scrollY>40){
+                    toTop.style.opacity="1";
+                }else{
+                    toTop.style.opacity="0";
+                }
+            })
+            toTop.addEventListener("click", ()=>{
+                window.scrollTo(0,0)
+            })
+        </script>
+    </section>
+</body>
+
+</html>
