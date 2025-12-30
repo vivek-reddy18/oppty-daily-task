@@ -186,6 +186,20 @@ body.search-open header {
     z-index: 3;
     border: none;
 }
+.success-message {
+    display: none;
+    background-color: #1abc9c; 
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    width:50%;
+    transform: translateX(350px);
+}
+
 
 .search-box.active {
     top: 0;
