@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #1f2933;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Stats */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.warning {
+    border-left: 6px solid #f59e0b;
+}
+
+.critical {
+    border-left: 6px solid #ef4444;
+}
+
+/* Button */
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* Table */
+.table-section {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #1f2933;
+    color: white;
+}
+
+.status-4xx {
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+.status-5xx {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #e5e7eb;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>API Error Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>API Error Dashboard</h1>
+    <p>Track failed API calls and error messages</p>
+</header>
+
+<section class="stats">
+    <div class="card">
+        <h3>Total Errors</h3>
+        <p id="totalErrors">0</p>
+    </div>
+    <div class="card warning">
+        <h3>4xx Errors</h3>
+        <p id="clientErrors">0</p>
+    </div>
+    <div class="card critical">
+        <h3>5xx Errors</h3>
+        <p id="serverErrors">0</p>
+    </div>
+</section>
+
+<section class="controls">
+    <button onclick="callApi()">Simulate API Call</button>
+</section>
+
+<section class="table-section">
+    <h2>Failed API Calls</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Endpoint</th>
+                <th>Status</th>
+                <th>Error Message</th>
+            </tr>
+        </thead>
+        <tbody id="errorTable">
+            <!-- Errors will appear here -->
+        </tbody>
+    </table>
+</section>
+
+<footer>
+    © 2025 API Monitoring Dashboard
+</footer>
+
+<script>
+    let errors = [];
+let clientErrorCount = 0;
+let serverErrorCount = 0;
+
+function callApi() {
+    // Simulate random API errors
+    const fakeErrors = [
+        { status: 400, message: "Bad Request" },
+        { status: 401, message: "Unauthorized" },
+        { status: 404, message: "Not Found" },
+        { status: 500, message: "Internal Server Error" },
+        { status: 503, message: "Service Unavailable" }
+    ];
+
+    const randomError = fakeErrors[Math.floor(Math.random() * fakeErrors.length)];
+
+    logError("/api/test", randomError.status, randomError.message);
+}
+
+
+function logError(endpoint, status, message) {
+    const error = {
+        time: new Date().toLocaleTimeString(),
+        endpoint,
+        status,
+        message
+    };
+
+    errors.unshift(error);
+
+    if (status >= 500) {
+        serverErrorCount++;
+    } else {
+        clientErrorCount++;
+    }
+
+    renderDashboard();
+}
+
+function renderDashboard() {
+    const table = document.getElementById("errorTable");
+    table.innerHTML = "";
+
+    errors.forEach(err => {
+        const row = document.createElement("tr");
+        const statusClass = err.status >= 500 ? "status-5xx" : "status-4xx";
+
+        row.innerHTML = `
+            <td>${err.time}</td>
+            <td>${err.endpoint}</td>
+            <td class="${statusClass}">${err.status}</td>
+            <td>${err.message}</td>
+        `;
+
+        table.appendChild(row);
+    });
+
+    document.getElementById("totalErrors").innerText = errors.length;
+    document.getElementById("clientErrors").innerText = clientErrorCount;
+    document.getElementById("serverErrors").innerText = serverErrorCount;
+}
+
+</script>
+</body>
+</html>
+
+</body>
+</html>

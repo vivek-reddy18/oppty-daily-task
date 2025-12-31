@@ -62,6 +62,29 @@
     height: 500px;
    
 }
+.map h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.on{
+   
+    text-align: center;
+    margin-top: 20px;
+}
+
+.open{
+    width:150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid #D1AF78;
+    cursor: pointer;
+   
+}
+.open:hover{
+    background-color: #D1AF78;
+}
 .container4{
     justify-content: center;
     align-items: center;

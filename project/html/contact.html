@@ -64,6 +64,28 @@
                 width="1100px" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <div class="map">
+                <h2>📍 Find Us on Google Maps</h2>
+                <div class="on">
+                   <button class="open" onclick="openMap()">Open Location</button>
+                </div> 
+                <script>
+                    function openMap() {
+                    
+                        const address = "108/43 Vijaya Lakshmi Enclave 1st Floor H No 2 PJR Enclave Rd Gangaram ICRISAT Colony Hyderabad Telangana 500050";
+
+                    
+                        const mapURL =
+                            "https://www.google.com/maps/search/?api=1&query=" +
+                            encodeURIComponent(address);
+
+                        
+                        window.open(mapURL, "_blank"); 
+                    }
+                </script>
+
+         </div>   
+        
         <div class="container5">
             <h3>CONTACT</h3>
             <h2>Contact me for any inquiries</h2>
@@ -78,7 +100,7 @@
                 <button type="submit" class="contact">CONTACT ME</button>
             </form>
 
-            
+
             <div id="successMsg" class="success-message">
                 👍 THANK YOU FOR YOUR MESSAGE. IT HAS BEEN SENT.
             </div>
@@ -94,7 +116,7 @@
 
                 this.reset();
 
-                
+
                 setTimeout(() => {
                     successMsg.style.display = "none";
                 }, 5000);
