@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <section class="header">
+        <h1>API Error Dashboard</h1>
+        <p>Tracking failed API calls and error messages</p>
+    </section>
+    <section class="cards">
+        <div class="container1">
+            <h2>Total Errors</h2>
+            <p id="totalErrors">0</p>
+        </div>
+        <div class="container2">
+            <h2>4xx Errors</h2>
+            <p id="clientErrors">0</p>
+        </div>
+        <div class="container3">
+            <h2>5xx Errors</h2>
+            <p id="serverErrors">0</p>
+        </div>
+    </section>
+    <div class="container4">
+        <button class="btn" onclick="callApi()">Simulate API Call</button>
+    </div>
+    <section class="one">
+        <h2>Failed API Calls</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Endpoint</th>
+                    <th>Status</th>
+                    <th>Error Message</th>
+                </tr>
+            </thead>
+            <tbody id="errorTable">
+                
+            </tbody>
+        </table>
+    </section>
+    <section class="footer">
+        <h2>@2025 API Error Dashboard</h2>
+        <div class="container5">
+            <a href="https://www.postman.com/"><img src="post.png" class="img"></a>
+            <a href="https://www.instagram.com/"><img src="instagram-brands-solid-full (1).svg" class="img"></a>
+            <a href="https://x.com/"><img src="twitter-brands-solid-full.svg" class="img"></a>
+            <a href="https://www.facebook.com/"><img src="facebook-f-brands-solid-full.svg" class="img"></a>
+        </div>
+    </section>
+    <script src="script1.js"></script>
+</body>
+</html>
