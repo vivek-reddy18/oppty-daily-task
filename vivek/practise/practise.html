@@ -5,119 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        .header {
-            display: flex;
-            justify-content: space-between;
-
-        }
-
-        .container1 {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-
         .img {
             width: 100px;
             height: 100px;
-        }
-
-        .container4 {
+            background-color: blue;
             padding: 20px;
-            margin-left: 350px;
+
         }
 
-        .container4 a {
-            text-decoration: none;
-            padding: 30px;
-            color: white;
-        }
-        .container4 a:hover{
-            color:orange;
-        }
-
-        .container5 {
+        .one {
             padding: 20px;
-            margin-right: 100px;
-        }
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: scroll 20s linear infinite;
+            animation: scroll 12s linear infinite reverse;
 
-        .container6 {
-            padding: 40px;
-            margin-top: 50px;
-            margin-left: 50px;
-        }
-
-        .whole {
-            background-image: url(bg.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 100vh;
-            background-position: center;
 
         }
 
-        .txt {
-            color: orangered;
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(100%);
+            }
         }
-        .container6 h2{
-            font-size: 50px;
-        }  
-        .container6 p{
-            font-size: 20px;
-        } 
-        .container7{
-            padding: 20px;
-        } 
-        .img3{
-            width:20px;
-            height: 20px;
+
+        .big-animate {
+            opacity: 0;
+            transform: translateY(100px) scale(0.9);
+            animation: bigEntry 1.2s ease-out forwards;
+        }
+
+        @keyframes bigEntry {
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
         }
     </style>
 </head>
 
 <body>
-    <section class="whole">
-        <section class="header">
-            <div class="container1">
-                <div class="container2">
-                    <img src="bg.jpg" class="img">
-                </div>
-                <div class="container3">
-                    <h1>mexant</h1>
-                </div>
-            </div>
-            <div class="container4">
-                
-                    <a href="#">Home</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
-                    <a href="#">About</a>
-                    <button class="btn">Sign in</button>
-                
+    <section class="one">
+        <img src="check-solid-full.svg" class="img">
+        <img src="check-solid-full.svg" class="img">
+        <img src="check-solid-full.svg" class="img">
+        <img src="check-solid-full.svg" class="img">
+        <img src="check-solid-full.svg" class="img">
+        <img src="check-solid-full.svg" class="img">
 
-            </div>
-            <!-- <div class="container5">
-                <button class="btn">Sign in</button>
-            </div> -->
-        </section>
-        <section class="hero">
-            <div class="container6">
-                <h2>Get<span class="txt"> Ready</span> for the bussiness<br>& upgrade <span class="txt">all
-                        aspects</span> </h2>
-                <p>Vivek reddy is the good boy in the class &<br>the clever student in the class and <br>one the of the
-                    best in the development.</p>
+        <img src="check-solid-full.svg" class="img">
+        <img src="check-solid-full.svg" class="img">
+        <img src="check-solid-full.svg" class="img">
+        <img src="check-solid-full.svg" class="img">
+        <img src="check-solid-full.svg" class="img">
+        <img src="check-solid-full.svg" class="img">
+    </section>
+    <h1 class="big-animate">Big Animation Text</h1>
 
-                <div class="container7">
-                    <button class="btn1">Sign in</button>
-                    <button class="btn2">Others</button>
-                </div>
-            </div>
-        </section>
-        <div class="con">
-           <p> <i class="fa-solid fa-check"></i> The best one in the world</p>
-        </div>
 </body>
 
 </html>

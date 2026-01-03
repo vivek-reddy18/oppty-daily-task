@@ -4,20 +4,31 @@ let clientErrorCount = 0;
 let serverErrorCount = 0; 
 
 
-function callApi() {
-    
-    const fakeErrors = [
-        { status: 400, message: "Bad Request" },
-        { status: 401, message: "Unauthorized" },
-        { status: 404, message: "Not Found" },
-        { status: 500, message: "Internal Server Error" },
-        { status: 503, message: "Service Unavailable" }
-    ];
+async function callApi() {
+    const apiUrl = "https://httpbin.org/status/400,401,404,500,503";
 
-    const randomError = fakeErrors[Math.floor(Math.random() * fakeErrors.length)];
+    try {
+        const response = await fetch(apiUrl);
 
-    logError("/api/test", randomError.status, randomError.message);
+        if (!response.ok) {
+            throw {
+                status: response.status,
+                message: response.statusText
+            };
+        }
+
+        await response.text();
+
+    } catch (error) {
+        logError(
+            apiUrl,
+            error.status || 500,
+            error.message || "Network Error"
+        );
+    }
 }
+
+
 
 function logError(endpoint, status, message) {
     const error = {

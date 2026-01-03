@@ -161,9 +161,10 @@ img{
     border-radius: 50px;
     background-color: white;
 }
-.container5{
-    color: white;
+.container5 a{
+    color:black;
 }
+
 .footer h2{
     text-align: center;
     color: white;
