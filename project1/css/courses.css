@@ -44,8 +44,9 @@ nav a:hover{
 }
 .img1{
     width:200px;
-    height: 300px;
-    margin-top: 20px;
+    height: 200px;
+    margin-top: 60px;
+    border-radius: 100px;
 }
 .one{
     display: flex;
