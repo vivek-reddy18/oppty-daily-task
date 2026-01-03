@@ -1,73 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
     <style>
-        .img {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            padding: 20px;
+        body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        }
+.weather-box {
+    background: white;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
 
-        .one {
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            animation: scroll 20s linear infinite;
-            animation: scroll 12s linear infinite reverse;
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
 
+button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
 
-        }
+button:hover {
+    background: #e63e3e;
+}
 
-        @keyframes scroll {
-            from {
-                transform: translateX(0);
-            }
+.result p {
+    margin: 5px 0;
+}
 
-            to {
-                transform: translateX(100%);
-            }
-        }
-
-        .big-animate {
-            opacity: 0;
-            transform: translateY(100px) scale(0.9);
-            animation: bigEntry 1.2s ease-out forwards;
-        }
-
-        @keyframes bigEntry {
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
     </style>
 </head>
-
 <body>
-    <section class="one">
-        <img src="check-solid-full.svg" class="img">
-        <img src="check-solid-full.svg" class="img">
-        <img src="check-solid-full.svg" class="img">
-        <img src="check-solid-full.svg" class="img">
-        <img src="check-solid-full.svg" class="img">
-        <img src="check-solid-full.svg" class="img">
 
-        <img src="check-solid-full.svg" class="img">
-        <img src="check-solid-full.svg" class="img">
-        <img src="check-solid-full.svg" class="img">
-        <img src="check-solid-full.svg" class="img">
-        <img src="check-solid-full.svg" class="img">
-        <img src="check-solid-full.svg" class="img">
-    </section>
-    <h1 class="big-animate">Big Animation Text</h1>
+<div class="weather-box">
+    <h2>Weather App</h2>
+
+    <input type="text" id="city" placeholder="Enter city name">
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div class="result">
+        <h3 id="location"></h3>
+        <p id="temp"></p>
+        <p id="weather"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+    </div>
+</div>
+
+<script>
+const apiKey = "YOUR_REAL_API_KEY";
+
+function getWeather() {
+    const city = document.getElementById("city").value.trim();
+
+    if (!city) {
+        alert("Enter city name");
+        return;
+    }
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&units=metric&appid=${apiKey}`;
+
+    fetch(url)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("City not found");
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.getElementById("location").innerText =
+                `${data.name}, ${data.sys.country}`;
+
+            document.getElementById("temp").innerText =
+                `🌡 Temperature: ${data.main.temp} °C`;
+
+            document.getElementById("weather").innerText =
+                `☁ Weather: ${data.weather[0].description}`;
+
+            document.getElementById("humidity").innerText =
+                `💧 Humidity: ${data.main.humidity}%`;
+
+            document.getElementById("wind").innerText =
+                `🌬 Wind Speed: ${data.wind.speed} m/s`;
+        })
+        .catch(error => {
+            alert(error.message);
+        });
+}
+</script>
 
 </body>
-
 </html>

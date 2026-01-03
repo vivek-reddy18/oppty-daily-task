@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+
+<body>
+    <h1>Interactive Web Project</h1>
+    <section class="header">
+        <a href="#">Home</a>
+        <a href="#">Dynamic</a>
+        <a href="#">Timer</a>
+        <a href="#">Contact Form</a>
+    </section>
+    <div class="container">
+        <h2>About This Project</h2>
+    </div>
+    <section class="first">
+        <div class="container1">
+            <p>This is a sample interactive web page built using HTML and Javascript.</p>
+            <p>It features dynamic content manipulation,<br>form validation, and local storage.</p>
+            <h2>Features Demonstrated:</h2>
+            <h3>&#9679 DOM manipulation</h3>
+            <h3>&#9679 Form validation</h3>
+            <h3>&#9679 Event handling</h3>
+            <h3>&#9679 Dynamic contant-updates</h3>
+            <h3>&#9679 Local storage</h3>
+        </div>
+        <div class="container2">
+            <div class="hero-right">
+                <iframe id="map" src="https://www.google.com/maps?q=San%20Francisco&output=embed">
+                </iframe>
+
+                <button onclick="toggleMap()">Toggle Map</button>
+            </div>
+            <script>
+                let mapVisible = true;
+
+                function toggleMap() {
+                    const map = document.getElementById("map");
+                    map.style.display = mapVisible ? "none" : "block";
+                    mapVisible = !mapVisible;
+                }
+            </script>
+        </div>
+    </section>
+    <section class="second">
+        <div class="container3">
+            <h2>Interactive TO-DO List</h2>
+            <div class="input-group">
+                <input type="text" id="taskInput" placeholder="New Task...">
+                <button onclick="addTask()" class="add">Add</button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <div class="note">
+                Tasks are saved in your browser's local storage.
+            </div>
+
+            <button class="clear-btn" onclick="clearTasks()">Clear All Tasks</button>
+            <script>
+                const taskInput = document.getElementById("taskInput");
+                const taskList = document.getElementById("taskList");
+
+                // Load tasks on page load
+                window.onload = loadTasks;
+
+                function addTask() {
+                    const task = taskInput.value.trim();
+                    if (task === "") return;
+
+                    createTask(task);
+                    saveTask(task);
+
+                    taskInput.value = "";
+                }
+
+                function createTask(task) {
+                    const li = document.createElement("li");
+                    li.innerHTML = `
+                    <span>${task}</span>
+                    <button onclick="removeTask(this)">Remove</button>
+                    `;
+                    taskList.appendChild(li);
+                }
+
+                function removeTask(btn) {
+                    const li = btn.parentElement;
+                    const taskText = li.querySelector("span").innerText;
+
+                    li.remove();
+                    deleteTask(taskText);
+                }
+
+                function saveTask(task) {
+                    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+                    tasks.push(task);
+                    localStorage.setItem("tasks", JSON.stringify(tasks));
+                }
+
+                function loadTasks() {
+                    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+                    tasks.forEach(task => createTask(task));
+                }
+
+                function deleteTask(task) {
+                    let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+                    tasks = tasks.filter(t => t !== task);
+                    localStorage.setItem("tasks", JSON.stringify(tasks));
+                }
+
+                function clearTasks() {
+                    localStorage.removeItem("tasks");
+                    taskList.innerHTML = "";
+                }
+
+            </script>
+            <h2>Auto-Updating Timer</h2>
+            <div class="container5">
+                <p>This counter auto-updates every second:</p>
+
+                <h4>
+                    Time elapsed:
+                    <span id="time1">00:00:00</span>
+                </h4>
+
+                <button class="bot" onclick="pauseTimer1()">Pause Timer</button>
+                <button class="bot" onclick="resetTimer1()">Reset Timer</button>
+            </div>
+            <script>
+                let seconds1 = 0;
+                let timer1 = setInterval(updateTimer1, 1000);
+                let running1 = true;
+
+                function updateTimer1() {
+                    seconds1++;
+
+                    let hrs1 = Math.floor(seconds1 / 3600);
+                    let mins1 = Math.floor((seconds1 % 3600) / 60);
+                    let secs1 = seconds1 % 60;
+
+                    document.getElementById("time1").innerText =
+                        `${String(hrs1).padStart(2, "0")}:${String(mins1).padStart(2, "0")}:${String(secs1).padStart(2, "0")}`;
+                }
+
+                function pauseTimer1() {
+                    if (running1) {
+                        clearInterval(timer1);
+                        running1 = false;
+                    } else {
+                        timer1 = setInterval(updateTimer1, 1000);
+                        running1 = true;
+                    }
+                }
+
+                function resetTimer1() {
+                    clearInterval(timer1);
+                    seconds1 = 0;
+                    document.getElementById("time1").innerText = "00:00:00";
+                    timer1 = setInterval(updateTimer1, 1000);
+                    running1 = true;
+                }
+            </script>
+
+            <div class="container2">
+                <img src="./1_T5P1nDh5r_ih6I9Xp-dNOQ.png" class="img1" onclick="openMap()">
+                <script>
+                    function openMap() {
+
+                        const address = "108/43 Vijaya Lakshmi Enclave 1st Floor H No 2 PJR Enclave Rd Gangaram ICRISAT Colony Hyderabad Telangana 500050";
+
+
+                        const mapURL =
+                            "https://www.google.com/maps/search/?api=1&query=" +
+                            encodeURIComponent(address);
+
+
+                        window.open(mapURL, "_blank");
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="container4">
+            <h2>Auto-Updating Timer</h2>
+            <div class="container5">
+                <p>This counter auto-updates every second:</p>
+
+                <h3>
+                    Time elapsed:
+                    <span id="time">00:00:00</span>
+                </h3>
+
+                <button class="bot" onclick="pauseTimer()">Pause Timer</button>
+                <button class="bot" onclick="resetTimer()">Reset Timer</button>
+            </div>
+            <script>
+                let seconds = 0;
+                let timer = setInterval(updateTimer, 1000);
+                let running = true;
+
+                function updateTimer() {
+                    seconds++;
+
+                    let hrs = Math.floor(seconds / 3600);
+                    let mins = Math.floor((seconds % 3600) / 60);
+                    let secs = seconds % 60;
+
+                    document.getElementById("time").innerText =
+                        `${String(hrs).padStart(2, "0")}:${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+                }
+
+                function pauseTimer() {
+                    if (running) {
+                        clearInterval(timer);
+                        running = false;
+                    } else {
+                        timer = setInterval(updateTimer, 1000);
+                        running = true;
+                    }
+                }
+
+                function resetTimer() {
+                    clearInterval(timer);
+                    seconds = 0;
+                    document.getElementById("time").innerText = "00:00:00";
+                    timer = setInterval(updateTimer, 1000);
+                    running = true;
+                }
+
+            </script>
+            <form class="form" id="contactForm">
+                <h2>Contact Form</h2>
+                <h3>Send me a message</h3>
+
+                <label>Name:</label>
+                <input type="text" class="name" required>
+                <hr>
+
+                <label>Email:</label>
+                <input type="email" class="email" required>
+                <hr>
+
+                <label>Password:</label>
+                <input type="password" class="password" required>
+                <hr>
+
+                <label>Message:</label>
+                <textarea id="message" rows="5"></textarea>
+                <hr>
+                <label for="sub">Subscribe:</label>
+                <input type="radio" class="sub" name="subscribe" value="yes"> Yes
+                <input type="radio" class="sub" name="subscribe" value="no"> No
+                <br><br>
+                <label for="pre">Preffered Contact:</label>
+                <input type="checkbox" class="check" value="email"> Email
+                <input type="checkbox" class="check" value="phone"> Phone
+                <br><br>
+
+                <button type="submit" class="sun">Submit</button>
+
+                <h4 id="saveMsg" style="display:none;color:green;">
+                    Your information is saved in this browser!
+                </h4>
+            </form>
+
+            <script>
+                document.getElementById("contactForm").addEventListener("submit", function (e) {
+                    e.preventDefault(); // stop page refresh
+
+                    const data = {
+                        name: document.querySelector(".name").value,
+                        email: document.querySelector(".email").value,
+                        password: document.querySelector(".password").value,
+                        message: document.getElementById("message").value,
+                        subscribe: document.querySelector('input[name="subscribe"]:checked')?.value || "",
+                        contact: Array.from(document.querySelectorAll('.check:checked')).map(cb => cb.value)
+                    };
+
+                    localStorage.setItem("contactData", JSON.stringify(data));
+
+                    document.getElementById("saveMsg").style.display = "block";
+                });
+            </script>
+
+
+    </section>
+    <section class="footer">
+        <h2>&copy; 2024 Interactive Web Project | Your email:user@gmail.com</h2><br>
+        <a href="#">Privacy Policy | Terms of Service</a>
+    </section>
+</body>
+
+</html>
